@@ -1,0 +1,32 @@
+
+
+public abstract class Prodotto {
+	private String cod;
+	private float prezzo;
+	private String nome;
+	public Prodotto(String cod, float prezzo, String nome) {
+		super();
+		this.cod = cod;
+		this.prezzo = prezzo;
+		this.nome = nome;
+	}
+	
+	public String getCod() {
+		return cod;
+	}
+
+	public float getPrezzo() {
+		return prezzo;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	@Override
+	public String toString() {
+		return "Prodotto [cod=" + cod + ", prezzo=" + prezzo + ", nome=" + nome + "]";
+	}
+	
+	
+}
