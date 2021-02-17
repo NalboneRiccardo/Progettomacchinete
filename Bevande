@@ -1,0 +1,16 @@
+public class Bevande extends Prodotto {
+	private int ml;
+	public Bevande(String cod, float prezzo, String nome, int ml) {
+		super(cod, prezzo, nome);
+		this.ml=ml;
+	}
+	public int getMl() {
+		return ml;
+	}
+	public void setMl(int ml) {
+		this.ml=ml;
+	}
+	public String toString() {
+		return "Ml [ml=" + ml + super.toString() +"]";
+	}
+}
